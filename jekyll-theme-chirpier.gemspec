@@ -15,8 +15,8 @@ Gem::Specification.new do |spec|
   }
 
   spec.metadata = {
-    "bug_tracker_uri"   => "https://github.com/cotes2020/jekyll-theme-chirpy/issues",
-    "documentation_uri" => "https://github.com/cotes2020/jekyll-theme-chirpy/#readme",
+    "bug_tracker_uri"   => "https://github.com/JiuYu77/jekyll-theme-chirpier/issues",
+    "documentation_uri" => "https://github.com/JiuYu77/jekyll-theme-chirpier/#readme",
     "homepage_uri"      => "https://cotes2020.github.io/chirpy-demo",
     "source_code_uri"   => "https://github.com/JiuYu77/jekyll-theme-chirpier",
     "wiki_uri"          => "https://github.com/JiuYu77/jekyll-theme-chirpier/wiki",
