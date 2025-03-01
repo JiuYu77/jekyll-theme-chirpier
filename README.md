@@ -13,5 +13,5 @@ bash tools/release.sh -p
 # gem发布
 
 ```shell
-gem push .gem文件的文件名(定义的主题名) -v 版本号
+gem push 定义的主题名-版本号.gem
 ```
