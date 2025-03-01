@@ -10,7 +10,7 @@ jekyll-theme-chirpy的自定义
 bash tools/release.sh -p
 ```
 
-# gem发布
+# 发布（gem）
 
 ```shell
 gem push 定义的主题名-版本号.gem
