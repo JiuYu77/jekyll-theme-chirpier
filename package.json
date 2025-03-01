@@ -12,7 +12,7 @@
   "bugs": {
     "url": "https://github.com/cotes2020/jekyll-theme-chirpy/issues"
   },
-  "homepage": "https://github.com/cotes2020/jekyll-theme-chirpy/",
+  "homepage": "https://github.com/JiuYu77/jekyll-theme-chirpier/",
   "scripts": {
     "build": "concurrently npm:build:*",
     "build:css": "node purgecss.js",
