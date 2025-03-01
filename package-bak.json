@@ -1,10 +1,10 @@
 {
-  "name": "jekyll-theme-chirpier",
-  "version": "0.0.1",
+  "name": "jekyll-theme-chirpy",
+  "version": "7.2.4",
   "description": "A minimal, responsive, and feature-rich Jekyll theme for technical writing.",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/JiuYu77/jekyll-theme-chirpier.git"
+    "url": "git+https://github.com/cotes2020/jekyll-theme-chirpy.git"
   },
   "author": "Cotes Chung",
   "license": "MIT",
