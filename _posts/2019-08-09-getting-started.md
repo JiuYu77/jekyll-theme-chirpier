@@ -15,6 +15,11 @@ media_subpath: '/posts/20180809'
 
 When creating your site repository, you have two options depending on your needs:
 
+| A | B | C |
+|:----:|:----:|:----:|
+| sss | bbbsgs啊啊啊bbbsgs啊啊啊bbbsgs啊啊啊bbbsgs啊啊啊 | This approach simplifies upgrades, isolates unnecessary files, and is perfect for users who want to focus on writing with minimal configuration. |
+| sss | bbb | This approach simplifies upgrades, isolates unnecessary files, and is perfect for users who want to focus on writing with minimal configuration.This approach simplifies upgrades, isolates unnecessary files, and is perfect for users who want to focus on writing with minimal configuration. |
+
 ### Option 1. Using the Starter (Recommended)
 
 This approach simplifies upgrades, isolates unnecessary files, and is perfect for users who want to focus on writing with minimal configuration.

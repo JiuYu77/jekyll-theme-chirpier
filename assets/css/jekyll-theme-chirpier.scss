@@ -8,3 +8,8 @@
 ';
 
 /* append your custom style below */
+%table-cell{
+  // white-space: inherit;
+  white-space: normal;
+  background-color: aqua;
+}
