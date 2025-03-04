@@ -14,7 +14,8 @@
     <a class="site-title d-block" href="{{ '/' | relative_url }}">{{ site.title }}</a>
     <p class="site-subtitle fst-italic mb-0">{{ site.tagline }}</p>
 
-    </br><table style="text-align:center;">
+    </br>
+    <table style="text-align:center;">
       <tr>
         <th style="padding-right:10px;">{{ site.posts | size }}</th>
         <th>{{ site.categories | size }}</th>
@@ -24,7 +25,6 @@
         <td>{{ site.data.locales[include.lang].tabs.categories }}</td>
         <td style="padding-left:10px;">{{ site.data.locales[include.lang].tabs.tags }}</td></tr>
     </table>
-
   </header>
   <!-- .profile-wrapper -->
 
