@@ -14,12 +14,16 @@
     <a class="site-title d-block" href="{{ '/' | relative_url }}">{{ site.title }}</a>
     <p class="site-subtitle fst-italic mb-0">{{ site.tagline }}</p>
 
-    <p>
-    <table style="text-align:center;">
-    <tr><th style="padding-right:10px;">{{ site.posts | size }}</th><th>{{ site.categories | size }}</th><th>{{ site.tags | size }}</th></tr>
-    <tr><td style="padding-right:10px;">文章</td><td style="padding-left:10px;padding-right:10px;">分类</td><td style="padding-left:10px;padding-right:10px;">标签</td></tr>
-    </table>{{ site.data.locales[include.lang].tabs.home }}
-    </p>
+    </br><table style="text-align:center;">
+      <tr>
+        <th style="padding-right:10px;">{{ site.posts | size }}</th>
+        <th>{{ site.categories | size }}</th>
+        <th style="padding-left:10px;">{{ site.tags | size }}</th></tr>
+      <tr>
+        <td style="padding-right:10px;">{{ site.data.locales[include.lang].layout.post }}</td>
+        <td>{{ site.data.locales[include.lang].tabs.categories }}</td>
+        <td style="padding-left:10px;">{{ site.data.locales[include.lang].tabs.tags }}</td></tr>
+    </table>
 
   </header>
   <!-- .profile-wrapper -->
