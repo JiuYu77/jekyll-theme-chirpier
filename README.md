@@ -6,6 +6,10 @@ jekyll-theme-chirpy的自定义
 - 优化单行代码颜色。
 - 增加显示： 文章数、类别数、标签数。
 
+# 模板
+
+[**jekyll-theme-chirpier 主题模板 chirpier-starter**](https://github.com/JiuYu77/chirpier-starter)
+
 # 构建（npm + gem）
 
 ```shell
