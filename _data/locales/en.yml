@@ -70,6 +70,9 @@ post:
     share_link:
       title: Copy link
       succeed: Link copied successfully!
+  list:
+    posts_list: Article List
+    pian: articles
 
 # Date time format.
 # See: <http://strftime.net/>, <https://day.js.org/docs/en/display/format>

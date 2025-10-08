@@ -113,6 +113,18 @@
   --code-header-icon-color: #c9c8c8;
   --clipboard-checked-color: #43c743;
 
+  // category-article-tree
+  --article-tree-bg: #ffffff;
+  --article-tree-posts-list-title-border: #007acc;
+  --article-tree-collapse-toggle-hover-color: #eeeeee;
+  --article-tree-current-article-bg: #1f8ed8;
+  --article-tree-border-color: #e9ecef;
+  --article-tree-innerborder: #dee2e6;
+  --article-tree-category-content-bg: #ffffff;
+  --article-tree-toggle-btn-hover-color: #eeeeee;
+  --article-tree-toggle-btn-border-color: #ebebeb;
+  --article-tree-subcategory-bg: #e9ecef;
+
   [class^='prompt-'] {
     --link-underline-color: rgb(219, 216, 216);
   }

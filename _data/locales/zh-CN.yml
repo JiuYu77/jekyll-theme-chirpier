@@ -69,6 +69,9 @@ post:
     share_link:
       title: 分享链接
       succeed: 链接已复制！
+  list:
+    posts_list: 文章列表
+    pian: 篇
 
 # Date time format.
 # See: <http://strftime.net/>, <https://day.js.org/docs/en/display/format>

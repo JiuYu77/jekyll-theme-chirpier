@@ -114,6 +114,18 @@
   --clipboard-checked-color: #2bcc2b;
   --filepath-text-color: #cacaca;
 
+  // category-article-tree
+  --article-tree-bg: #1e1e1e;
+  --article-tree-posts-list-title-border: #dddddd;
+  --article-tree-collapse-toggle-hover-color: #2e2e2e;
+  --article-tree-current-article-bg: #444444;
+  --article-tree-border-color: #3b3b3b;
+  --article-tree-innerborder: #424242;
+  --article-tree-category-content-bg: #1e1e1e;
+  --article-tree-toggle-btn-hover-color: #2e2e2e;
+  --article-tree-toggle-btn-border-color: #3b3b3b;
+  --article-tree-subcategory-bg: rgba(199, 233, 241, 0.2);
+
   .light {
     display: none;
   }
