@@ -123,7 +123,45 @@ document.addEventListener('DOMContentLoaded', function() {
         this.click();
       }
     });
-    });
+  });
+
+  /*************** 显示/隐藏整个文章列表的功能 ***************/
+  const categoryTreeToggle = document.getElementById('category-tree-toggle');
+  const categoryArticleTree = document.getElementById('posts-list');
+  const categoryTreeToggleIcon = document.getElementById('category-tree-toggle-icon');
+
+  // 初始化状态
+  let isTreeVisible = false;
+
+  // 切换显示/隐藏状态
+  function toggleCategoryTree() {
+    isTreeVisible = !isTreeVisible;
+
+    if (isTreeVisible) {
+      categoryArticleTree.classList.add('category-tree-visible');
+      categoryArticleTree.classList.remove('category-tree-hidden');
+      categoryTreeToggle.setAttribute('aria-expanded', 'true');
+      categoryTreeToggleIcon.classList.add('fa-times');
+      categoryTreeToggleIcon.classList.remove('fa-bars');
+    } else {
+      categoryArticleTree.classList.add('category-tree-hidden');
+      categoryArticleTree.classList.remove('category-tree-visible');
+      categoryTreeToggle.setAttribute('aria-expanded', 'false');
+      categoryTreeToggleIcon.classList.add('fa-bars');
+      categoryTreeToggleIcon.classList.remove('fa-times');
+    }
+  }
+
+  // 绑定点击事件
+  categoryTreeToggle.addEventListener('click', toggleCategoryTree);
+  
+  // 添加键盘支持
+  categoryTreeToggle.addEventListener('keydown', function(e) {
+    if (e.key === 'Enter' || e.key === ' ') {
+      e.preventDefault();
+      toggleCategoryTree();
+    }
+  });
 
   /*************** 滚动到当前文章的功能 ***************/
   function scrollToCurrentArticle() {
@@ -189,43 +227,6 @@ document.addEventListener('DOMContentLoaded', function() {
     attributes: true,
     attributeFilter: ['class']
   });
+
 });
-
-  /*************** 显示/隐藏整个文章列表的功能 ***************/
-  const categoryTreeToggle = document.getElementById('category-tree-toggle');
-  const categoryArticleTree = document.getElementById('posts-list');
-  const categoryTreeToggleIcon = document.getElementById('category-tree-toggle-icon');
-
-  // 初始化状态
-  let isTreeVisible = false;
-
-  // 切换显示/隐藏状态
-  function toggleCategoryTree() {
-    isTreeVisible = !isTreeVisible;
-
-    if (isTreeVisible) {
-      categoryArticleTree.classList.add('category-tree-visible');
-      categoryArticleTree.classList.remove('category-tree-hidden');
-      categoryTreeToggle.setAttribute('aria-expanded', 'true');
-      categoryTreeToggleIcon.classList.add('fa-times');
-      categoryTreeToggleIcon.classList.remove('fa-bars');
-    } else {
-      categoryArticleTree.classList.add('category-tree-hidden');
-      categoryArticleTree.classList.remove('category-tree-visible');
-      categoryTreeToggle.setAttribute('aria-expanded', 'false');
-      categoryTreeToggleIcon.classList.add('fa-bars');
-      categoryTreeToggleIcon.classList.remove('fa-times');
-    }
-  }
-
-  // 绑定点击事件
-  categoryTreeToggle.addEventListener('click', toggleCategoryTree);
-  
-  // 添加键盘支持
-  categoryTreeToggle.addEventListener('keydown', function(e) {
-    if (e.key === 'Enter' || e.key === ' ') {
-      e.preventDefault();
-      toggleCategoryTree();
-    }
-  });
 </script>
