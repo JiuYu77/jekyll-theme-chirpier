@@ -1,5 +1,7 @@
 function initCategoryArticleTree(){
-// document.addEventListener('DOMContentLoaded', function() {
+  // defer 代替 DOMContentLoaded -> <script defer src="{{ '/assets/js/data/category-article-tree.js' | relative_url }}"></script>
+// document.addEventListener('DOMContentLoaded', function() { 
+
   /*************** 文章列表功能 ***************/
   // 获取所有折叠切换按钮
   const collapseToggles = document.querySelectorAll('.collapse-toggle');
@@ -167,7 +169,7 @@ function initCategoryArticleTree(){
     attributes: true,
     attributeFilter: ['class']
   });
-console.log('initCategoryArticleTree');
-// });
+
+// });  // DOMContentLoaded
 }
 initCategoryArticleTree();
