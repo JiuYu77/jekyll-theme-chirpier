@@ -14,13 +14,22 @@ jekyll-theme-chirpy的自定义
 # 构建&发布
 
 ## 构建（npm + gem）
-
+脚本文件`tools/release.sh` 中定义了构建和发布的命令。
 ```shell
-bash tools/release.sh -p
+bash tools/release.sh -p  # 仅构建 gem 包
 ```
 
 ## 发布（gem）
 
-```shell
-gem push 定义的主题名-版本号.gem
-```
+1. `.gemspec` 文件中定义`主题名`和`版本号`等信息，如：
+    ```shell
+    spec.name          = "jekyll-theme-chirpier"
+    spec.version       = "1.0.3"
+    spec.authors       = ["Cotes Chung", "JiuYu77"]
+    ```
+    每次发布时，需要更新`.gemspec` 文件中的`版本号`。
+2. 构建。
+3. `gem` 命令发布 gem 包：
+    ```shell
+    gem push 定义的主题名-版本号.gem
+    ```
