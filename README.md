@@ -11,13 +11,15 @@ jekyll-theme-chirpy的自定义
 
 [**jekyll-theme-chirpier 主题模板 chirpier-starter**](https://github.com/JiuYu77/chirpier-starter)
 
-# 构建（npm + gem）
+# 构建&发布
+
+## 构建（npm + gem）
 
 ```shell
 bash tools/release.sh -p
 ```
 
-# 发布（gem）
+## 发布（gem）
 
 ```shell
 gem push 定义的主题名-版本号.gem
