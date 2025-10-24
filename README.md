@@ -1,5 +1,6 @@
 # jekyll-theme-chirpier
-jekyll-theme-chirpy的自定义
+
+[jekyll-theme-chirpy](https://github.com/cotes2020/jekyll-theme-chirpy)的自定义
 
 # 新特性
 - 代码片段左上角的三个圆点使用不同的颜色。
